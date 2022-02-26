@@ -1,0 +1,165 @@
+* {margin: 0;
+    padding: 0;
+    color: #1a1a1a;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10vw;}
+
+body {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    background-color: #1a1a1a;   
+}
+
+main {
+    width: 100vw;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#container {
+    background-color: #dc143c;
+    width: 400px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.inputTLX {
+    text-align: center;
+    width: 75px;
+    height: 20px;
+    font-size: 20px;
+    justify-self: center;
+    align-self: center;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.inputTRX {
+    text-align: center;
+    border: none;
+    width: 75px;
+    height: 20px;
+    font-size: 20px;
+    justify-self: center;
+    align-self: center;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.inputBLX {
+    text-align: center;
+    width: 75px;
+    height: 20px;
+    font-size: 20px;
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.inputBRX {
+    text-align: center;
+    width: 75px;
+    height: 20px;
+    font-size: 20px;
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.inputTLY {
+    text-align: center;
+    width: 75px;
+    height: 20px;
+    font-size: 20px;
+    justify-self: center;
+    align-self: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    transform: rotate(90deg);
+
+}
+
+.inputTRY {
+    text-align: center;
+    border: none;
+    width: 75px;
+    height: 20px;
+    font-size: 20px;
+    justify-self: center;
+    align-self: center;
+    margin-top: 10px;
+    margin-right: 10px;
+    transform: rotate(90deg);
+
+}
+
+.inputBLY {
+    text-align: center;
+    width: 75px;
+    height: 20px;
+    font-size: 20px;
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    transform: rotate(90deg);
+
+}
+
+.inputBRY {
+    text-align: center;
+    width: 75px;
+    height: 20px;
+    font-size: 20px;
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    transform: rotate(90deg);
+}
+
+#result {
+    color: aliceblue;
+    width: 400px;
+    font-size: 20px;
+    margin: 10px;
+}
+
+#btnCopy {
+    background-color: #5c5c5c;
+    background-image: url(copy-icon.svg);
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #f0f8ff;
+    width: 8vw;
+    height: 70px;
+    border: 3px solid #979797;
+}
+
+#btnCopy:hover {
+    background-color: #979797;
+}
+
+#title {
+    font-size: 30px;
+    color: aliceblue;
+}
+
+#resultLabel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40vw;
+    height: 70px;
+    background-color: #5c5c5c;
+}
