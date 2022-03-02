@@ -20,111 +20,84 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    background-color: #ffffff70;
 }
 
 #container {
     background-color: #dc143c;
-    width: 400px;
-    height: 400px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    width: 25vw;
+    height: 25vw;
+    position: relative;
 }
 
 .inputTLX {
-    text-align: center;
-    width: 75px;
+    position: absolute;
+    width: 80px;
     height: 20px;
-    font-size: 20px;
-    justify-self: center;
-    align-self: center;
-    margin-top: 10px;
-    margin-left: 10px;
-}
-
-.inputTRX {
-    text-align: center;
-    border: none;
-    width: 75px;
-    height: 20px;
-    font-size: 20px;
-    justify-self: center;
-    align-self: center;
-    margin-top: 10px;
-    margin-right: 10px;
-}
-
-.inputBLX {
-    text-align: center;
-    width: 75px;
-    height: 20px;
-    font-size: 20px;
-    justify-self: center;
-    align-self: center;
-    margin-bottom: 10px;
-    margin-left: 10px;
-}
-
-.inputBRX {
-    text-align: center;
-    width: 75px;
-    height: 20px;
-    font-size: 20px;
-    justify-self: center;
-    align-self: center;
-    margin-bottom: 10px;
-    margin-right: 10px;
+    top: -40px;
+    left: -30px;
 }
 
 .inputTLY {
-    text-align: center;
-    width: 75px;
+    position: absolute;
+    width: 80px;
     height: 20px;
-    font-size: 20px;
-    justify-self: center;
-    align-self: center;
-    margin-top: 10px;
-    margin-left: 10px;
     transform: rotate(90deg);
+    top: 10px;
+    left: -80px;
+}
 
+.inputTRX {
+    position: absolute;
+    width: 80px;
+    height: 20px;
+    top: -40px;
+    right: -30px;
 }
 
 .inputTRY {
-    text-align: center;
-    border: none;
-    width: 75px;
+    position: absolute;
+    width: 80px;
     height: 20px;
-    font-size: 20px;
-    justify-self: center;
-    align-self: center;
-    margin-top: 10px;
-    margin-right: 10px;
     transform: rotate(90deg);
+    top: 10px;
+    right: -80px;
 
+}
+
+.inputBLX {
+    position: absolute;
+    width: 80px;
+    height: 20px;
+    bottom: -40px;
+    left: -30px;
 }
 
 .inputBLY {
-    text-align: center;
-    width: 75px;
+    position: absolute;
+    width: 80px;
     height: 20px;
-    font-size: 20px;
-    justify-self: center;
-    align-self: center;
-    margin-bottom: 10px;
-    margin-left: 10px;
     transform: rotate(90deg);
+    bottom: 10px;
+    left: -80px;
+}
 
+.inputBRX {
+    position: absolute;
+    width: 80px;
+    height: 20px;
+    bottom: -40px;
+    right: -30px;
 }
 
 .inputBRY {
-    text-align: center;
-    width: 75px;
+    position: absolute;
+    width: 80px;
     height: 20px;
-    font-size: 20px;
-    justify-self: center;
-    align-self: center;
-    margin-bottom: 10px;
-    margin-right: 10px;
     transform: rotate(90deg);
+    bottom: 10px;
+    right: -80px;
+
 }
 
 #result {

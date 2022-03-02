@@ -55,7 +55,7 @@ class Observer {
 
 function update() {
     updateResult();
-    container.style.borderRadius = `${inputTLX.value}% ${inputTRX.value}% ${inputBLX.value}% ${inputBRX.value}% / ${inputTLY.value}% ${inputTRY.value}% ${inputBLY.value}% ${inputBRY.value}%`;
+    container.style.borderRadius = `${inputTLX.value}% ${inputTRX.value}% ${inputBRX.value}% ${inputBLX.value}% / ${inputTLY.value}% ${inputTRY.value}% ${inputBRY.value}% ${inputBLY.value}%`;
 }
 
 // Initialize observer
@@ -99,5 +99,5 @@ inputBRY.addEventListener('input', () => {
 
 
 function updateResult() {
-    result.value = `border-radius: ${inputTLX.value}% ${inputTRX.value}% ${inputBLX.value}% ${inputBRX.value}% / ${inputTLY.value}% ${inputTRY.value}% ${inputBLY.value}% ${inputBRY.value}%`; 
+    result.value = `border-radius: ${inputTLX.value}% ${inputTRX.value}% ${inputBRX.value}% ${inputBLX.value}% / ${inputTLY.value}% ${inputTRY.value}% ${inputBRY.value}% ${inputBLY.value}%`; 
 }
