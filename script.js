@@ -22,7 +22,7 @@ inputBLY.value = 0;
 inputBRY.value = 0;
 
 // Initialize result
-const result = document.getElementById('result');
+const result = document.querySelector('#result');
 updateResult();
 
 // Initialize buttons
@@ -30,8 +30,8 @@ const btncopy = document.querySelector('#btnCopy')
 
 // Copy to clipboard
 btncopy.addEventListener('click', () => {
+    updateResult();
     navigator.clipboard.writeText(result.innerHTML);
-    alert(`Copied ${result.innerHTML} to clipboard`);
 });
 
 // defining observer class
@@ -56,6 +56,10 @@ class Observer {
 function update() {
     updateResult();
     container.style.borderRadius = `${inputTLX.value}% ${inputTRX.value}% ${inputBRX.value}% ${inputBLX.value}% / ${inputTLY.value}% ${inputTRY.value}% ${inputBRY.value}% ${inputBLY.value}%`;
+}
+
+function updateResult() {
+    result.value = `border-radius: ${inputTLX.value}% ${inputTRX.value}% ${inputBRX.value}% ${inputBLX.value}% / ${inputTLY.value}% ${inputTRY.value}% ${inputBRY.value}% ${inputBLY.value}%`; 
 }
 
 // Initialize observer
@@ -96,8 +100,3 @@ inputBLY.addEventListener('input', () => {
 inputBRY.addEventListener('input', () => {
     observer.notify();
 });
-
-
-function updateResult() {
-    result.value = `border-radius: ${inputTLX.value}% ${inputTRX.value}% ${inputBRX.value}% ${inputBLX.value}% / ${inputTLY.value}% ${inputTRY.value}% ${inputBRY.value}% ${inputBLY.value}%`; 
-}
